@@ -1,5 +1,5 @@
 angular.module('animateOnModelChange',[])
-  .directive('animateOnModelChange', ['$timeout',function ($timeout) {
+  .directive('animateOnModelChange', [function() {
     return {
       restrict: 'A',
       link: function (scope, element, attrs) {
