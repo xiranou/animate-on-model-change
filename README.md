@@ -6,18 +6,18 @@ Include javascript file
 
     <script src="animateOnModelChange.js"></script>
 
-Inject into your angular app
+Inject the module into your angular app
 
     var app = angular.module('myApp', ['animateOnModelChange'])
 
 Apply to the element you wish to aniamte and pass in model to watch for change
 
-    <span animate-on-model-change="yourModel"></span>
+    <span animate-on-model-change watch-model="yourModel"></span>
 
 Animate away with CSS!
 
     span {
       &.change-animate {
-        animation: fadeIn 0.5s ease;
+        animation: yourAnimation 0.5s ease;
       }
     }
